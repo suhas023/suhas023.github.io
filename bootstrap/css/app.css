@@ -1,0 +1,102 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+
+#app-name {
+	width: 200px;
+	color: green;
+	margin:10px 0px 10px  auto;
+	cursor: default;
+}
+
+#settings-container {
+  	margin: 0 20px 0 auto;
+ }
+
+#contacts td {
+	cursor: pointer;
+}
+
+.profile-pic {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+
+i {
+	color: green;
+	font-size: 25px;
+}
+
+.name {
+	color: green;
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.name:hover {
+	text-decoration: underline;
+}
+
+.time, .text-preview {
+	font-size: 13px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.notification {
+	margin:0 0px 0 0;
+	text-align: right;
+}
+
+.person-a td {
+	text-align: left;
+}
+
+.person-b td {
+	text-align: right;
+}
+
+.text {
+	margin: 0 10px 0 10px;
+}
+
+.fa-paper-plane {
+	margin: 0 5px 0 5px;
+	cursor: pointer;
+}
+
+form {
+	justify-content: flex-end;
+}
+
+.user-pic {
+	margin: 20px 0 10px 0;
+	width: 200px;
+	border-radius: 50%;
+}
+
+
+.user-name {
+	color: green;
+	font-weight: bold;
+}
+
+
+@media screen and (max-width: 762px) {
+
+	#app-name {
+		margin-right: auto;
+	}
+
+	#myTab {
+    	justify-content: center;
+  	}
+
+  	#settings-container {
+  		margin: 0;
+  	}
+}
