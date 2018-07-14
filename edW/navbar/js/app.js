@@ -4,7 +4,7 @@ $( document ).ready(function() {
 	let dropDownButton = $(".drop-down");
 	let dropDownShown = false;
 	let nonNavNames = $("li").not("#name");   //objects that are not name of the nav bar, to hide
-	let navTrigger = $("#nav-trigger");
+	let navTrigger = $("#nav-trigger i");
 	let navItemsShown = false;
 
 
