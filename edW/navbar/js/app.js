@@ -25,6 +25,13 @@ $( document ).ready(function() {
 		dropDownShown = (dropDownShown)? false : true;
 		event.stopPropagation();
 	});
+	
+	//when one of the item is pressed
+	$(".drop-down-links .link-item").on("click", event => {
+		dropDownLinks.toggleClass("hidden");
+		dropDownShown = false;
+		event.stopPropagation();
+	});
 
 	//If there's a click any where else hide the dropdown
 	$("body").on("click", event => {
