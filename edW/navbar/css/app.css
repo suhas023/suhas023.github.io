@@ -4,6 +4,10 @@ html, body {
 	height: 100%;
 }
 
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
 nav {
 	padding: 20px;
 	font-family: monospace;
