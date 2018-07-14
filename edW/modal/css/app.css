@@ -1,0 +1,107 @@
+html, body {
+	height: 100%;
+	background-color: steelblue;
+	padding: 0;
+	margin: 0;
+	font-family: monospace;
+}
+
+
+
+.container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#title {
+	color: white;
+	cursor: default;
+}
+
+.trigger {
+	height: 100px;
+	width: 270px;
+	font-size: 30px;
+	line-height: 50px;
+}
+
+.modal-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	background-color: rgb(0, 0, 0, 0.5);
+}
+
+.modal {
+	display: none;
+	position: absolute;
+	width: 280px;
+	padding: 10px;
+	background-color: #d7d7d9;
+	cursor: default;
+}
+
+.modal-header {
+	display: flex;
+	padding: 5px;
+	border-bottom: 1px solid white;
+}
+
+.modal-header .title {
+	flex: 1;
+	margin: 0;
+	align-self: center;
+}
+
+.modal-header .quit {
+	margin: 0px;
+	padding: 0px;
+	align-self: center;
+	cursor: pointer;
+}
+
+.modal-text {
+	text-align: center;
+	font-size: 17px;
+	border-bottom: 1px solid white;
+}
+
+.modal-btns {
+	text-align: right;
+	font-size: 20px;
+	padding: 10px 0 0 0;
+}
+
+.modal-btns .close {
+	background-color: #6c757d;
+	color: white;
+	padding: 8px;
+	cursor: pointer;
+	border: none;
+}
+
+.modal-btns .accept {
+	background-color: #007bff;
+	color: white;
+	padding: 8px;
+	cursor: pointer;
+	border: none;
+}
+
+
+.modal-header .quit:hover {
+	color: gray;
+}
+ 
+.modal-btns .accept:hover {
+	background-color: #083d91;
+}
+
+.modal-btns .close:hover {
+	background-color: #4a535b;
+}
