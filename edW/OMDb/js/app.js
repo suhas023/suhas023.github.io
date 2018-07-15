@@ -14,7 +14,7 @@ $(document).ready(function() {
 	//Set basic conditions
 	let activeTitleYear = true;						//Which mode is active
 	let activeId = false;
-	let api = "http://www.omdbapi.com/?";
+	let api = "https://www.omdbapi.com/?";
 	let apiKey = "&apikey=1debd9";
 	let searchString = "";							//Search made in the forms is stored as a URL
 
