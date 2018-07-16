@@ -145,7 +145,7 @@ function getResult(data) {
 					${((data.Website !== undefined) && (data.Website !== "N/A"))?`<p class="link"><span class="highlight"><a href="${data.Website}" target="_blank">Website</a></span></p>`:``}
 				</div>
 				<div class="other-details box">
-					<p><span class="highlight">imdbID: </span> ${(data.imdbID !== undefined)? data.imdbID: "N/A"}</p>
+					<p><span class="highlight">imdbID:</span>${(data.imdbID !== undefined)? data.imdbID: "N/A"}</p>
 					<p><span class="highlight">Language: </span> ${(data.Language !== undefined)? data.Language: "N/A"}</p>
 					<p><span class="highlight">Awards: </span> ${(data.Awards !== undefined)? data.Awards: "N/A"}</p>
 					<p class="rating"><span class="highlight">IMDB rating:</span> ${((data.Ratings !== undefined) && (data.Ratings[0] !== undefined))? data.Ratings[0].Value: "N/A"}</p>
