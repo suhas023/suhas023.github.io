@@ -1,19 +1,22 @@
-html, body {
-	height: 100%;
-}
-
 body {
 	margin: 0px;
 	padding: 0px;
 	background-color: #222f3e;
     font-family: 'Ubuntu', sans-serif;
+}
 
+.container {
+	margin: 0px;
+	padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 * {
 	box-sizing: border-box;
 }
-
 
 header h1 {
     font-size: 45px;
@@ -41,7 +44,7 @@ input {
 	height: 35px;
 	width: 260px;
 	font-size: 15px;
-	color: rgb(81, 60, 137);
+	color: #4c4c4c;
 	border-radius: 7px;
 	cursor: default;
   	outline: none;
@@ -64,7 +67,7 @@ input {
 	max-width: 400px;
 	padding: 10px 0px;
 	margin: 10px;
-	text-align: center;	
+	text-align: center;
 }
 
 #toggle button {
@@ -95,7 +98,7 @@ input {
 	align-items: center;
 	padding: 5px;
 
-	display: hidden;
+	display: none;
 }
 
 .block {
@@ -105,7 +108,7 @@ input {
 }
 
 .meta {
-	text-align: center;	
+	text-align: center;
 }
 
 .box {
@@ -177,7 +180,7 @@ a, .highlight {
 
 footer {
 	width: 100%;
-	margin: 200px 0px 0px 0px;
+	margin: 180px 0px 0px 0px;
 	text-align: center;
 	font-size: 14px;
 	color: #ee5253;
@@ -191,7 +194,7 @@ a:hover {
 }
 
 .inactive:hover {
-	background-color: #eaedef;	
+	background-color: #eaedef;
 }
 
 #search-btn:hover, #search-btn:active {
@@ -231,14 +234,14 @@ input:hover, input:focus {
 		justify-content: center;
 		align-items: flex-start;
 	}
-	
+
 	.box {
 		margin: 5px;
 	}
-	
+
 	.meta, .poster {
 		width: 280px;
-	} 
+	}
 }
 
 @media screen and (min-width: 700px) {
