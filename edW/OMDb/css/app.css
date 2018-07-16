@@ -2,16 +2,16 @@ body {
 	margin: 0px;
 	padding: 0px;
 	background-color: #222f3e;
-    font-family: 'Ubuntu', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .container {
 	margin: 0px;
 	padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 * {
