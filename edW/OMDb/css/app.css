@@ -97,7 +97,7 @@ input {
 	align-items: center;
 	padding: 5px;
 
-	display: none;
+	display: hidden;
 }
 
 .block {
