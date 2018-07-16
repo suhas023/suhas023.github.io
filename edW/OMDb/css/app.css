@@ -7,9 +7,7 @@ body {
 	padding: 0px;
 	background-color: #222f3e;
     font-family: 'Ubuntu', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 }
 
 * {
