@@ -71,6 +71,7 @@ input {
 }
 
 #toggle button {
+	font-family: 'Ubuntu', sans-serif;
 	height: 30px;
 	margin: 0px;
 	border: none;
