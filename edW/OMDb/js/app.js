@@ -3,7 +3,7 @@
 $(document).ready(function() {
 
 	//DOM elements to handle events
-	let searchInput = $("#search-input");			//Search input form 
+	let searchInput = $("#search-input");			//Search input form
 	let yearInput = $("#year-input");				//Year input form
 	let searchButton = $("#search-btn");			//Search Button
 	let toggleTitleYear = $("#title-year-btn");		//Toggle to change to title-year mode
@@ -14,7 +14,7 @@ $(document).ready(function() {
 	//Set basic conditions
 	let activeTitleYear = true;						//Which mode is active
 	let activeId = false;
-	let api = "https://www.omdbapi.com/?";
+	let api = "http://www.omdbapi.com/?";
 	let apiKey = "&apikey=1debd9";
 	let searchString = "";							//Search made in the forms is stored as a URL
 
@@ -35,8 +35,8 @@ $(document).ready(function() {
 			searchInput.attr("placeholder", "Title (required)");
 			yearInput.slideDown();
 		}
-	}); 
-	
+	});
+
 	//Change to IMDB ID search mode
 	toggleId.on("click", () => {
 		if(!activeId) {
@@ -139,14 +139,15 @@ function getResult(data) {
 					<p>${(data.Plot !== undefined)? data.Plot: "N/A"}</p>
 				</div>
 				<div class="cast-crew box">
-					<p><span class="highlight">Actors:</span> ${(data.Actors !== undefined)? data.Actors: "N/A"}</p>
-					<p><span class="highlight">Director:</span> ${(data.Director !== undefined)? data.Director: "N/A"}</p>
-					<p><span class="highlight">Production:</span> ${(data.Production !== undefined)? data.Production: "N/A"}</p>
-					${(data.Website !== undefined)?`<p class="link"><span class="highlight"><a href="${data.Website}" target="_blank">Website</a></span></p>`:``}
+					<p><span class="highlight">Actors: </span> ${(data.Actors !== undefined)? data.Actors: "N/A"}</p>
+					<p><span class="highlight">Director: </span> ${(data.Director !== undefined)? data.Director: "N/A"}</p>
+					<p><span class="highlight">Production: </span> ${(data.Production !== undefined)? data.Production: "N/A"}</p>
+					${((data.Website !== undefined) && (data.Website !== "N/A"))?`<p class="link"><span class="highlight"><a href="${data.Website}" target="_blank">Website</a></span></p>`:``}
 				</div>
 				<div class="other-details box">
-					<p><span class="highlight">Language:</span> ${(data.Language !== undefined)? data.Language: "N/A"}</p>
-					<p><span class="highlight">Awards:</span> ${data.Awards}</p>
+					<p><span class="highlight">imdbID: </span> ${(data.imdbID !== undefined)? data.imdbID: "N/A"}</p>
+					<p><span class="highlight">Language: </span> ${(data.Language !== undefined)? data.Language: "N/A"}</p>
+					<p><span class="highlight">Awards: </span> ${(data.Awards !== undefined)? data.Awards: "N/A"}</p>
 					<p class="rating"><span class="highlight">IMDB rating:</span> ${((data.Ratings !== undefined) && (data.Ratings[0] !== undefined))? data.Ratings[0].Value: "N/A"}</p>
 					<p class="rating"><span class="highlight">METASCORE:</span> ${((data.Ratings !== undefined) && (data.Ratings[2] !== undefined))? data.Ratings[2].Value: "N/A"}</p>
 					<p class="rating"><span class="highlight">TOMATOMETER:</span> ${((data.Ratings !== undefined) && (data.Ratings[1] !== undefined))? data.Ratings[1].Value: "N/A"}</p>
