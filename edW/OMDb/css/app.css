@@ -148,6 +148,7 @@ a, .highlight {
 
 .poster img {
 	width: 100%;
+	display: block;
 }
 
 .plot {
