@@ -6,6 +6,7 @@ body {
 }
 
 .container {
+	main-height: 100vh;
 	margin: 0px;
 	padding: 0px;
 	display: flex;
@@ -182,7 +183,7 @@ a, .highlight {
 
 footer {
 	width: 100%;
-	margin: 250px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	text-align: center;
 	font-size: 14px;
 	color: #ee5253;
